@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD9898">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#BD9898"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:gravity="center"
+            android:text="Compras"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:autoSizeTextType="none" />
+
+        <EditText
+            android:id="@+id/compraCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Codigo"
+            android:inputType="text"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorHint="#000000"
+            android:textColorLink="#2E0909"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCompraBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/almendra_italic"
+            android:text="Buscar"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/tvCompraNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:fontFamily="@font/aladin"
+            android:hint="Nombre Producto"
+            android:textColorHighlight="#2E0909"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvcompraStock"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:fontFamily="@font/aladin"
+            android:hint="Stock"
+            android:textColorHighlight="#2E0909"
+            android:textColorHint="#000000"
+            android:textColorLink="#2E0909"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvcompraPrecioCompra"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:fontFamily="@font/aladin"
+            android:hint="Precio Compra"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/compraCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Cantidad"
+            android:inputType="text"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorHint="#000000"
+            android:textColorLink="#2E0909"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvcompraTotalPagar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:fontFamily="@font/aladin"
+            android:hint="Total a Pagar"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btncompraTotalPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/almendra_italic"
+            android:hint="Total a pagar"
+            android:text="Total a pagar"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnComprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/almendra_italic"
+            android:text="Comprar"
+            android:textSize="18sp"
+            app:icon="@drawable/shopping_bag_1230246"
+            app:iconTint="#FFFCFC" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="190dp"
+            android:layout_height="135dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/order" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

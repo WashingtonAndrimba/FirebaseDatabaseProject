@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBallena"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD9898">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="736dp"
+        android:background="#BD9898"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:gravity="center"
+            android:text="Inventario"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spMenu"
+            android:layout_width="409dp"
+            android:layout_height="77dp"
+            android:fontFamily="@font/almendra_italic" />
+
+        <ImageView
+            android:id="@+id/imgInventario"
+            android:layout_width="325dp"
+            android:layout_height="369dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/inventario_12062340" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

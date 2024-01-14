@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD9898">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:gravity="center"
+        android:text="Registro de Productos"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="413dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="50dp"
+            android:ems="19"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Codigo"
+            android:inputType="number"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorLink="#2E0909" />
+
+        <EditText
+            android:id="@+id/etNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:hint="Ingrese Nombre Producto"
+            android:inputType="text"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorLink="#2E0909" />
+
+        <EditText
+            android:id="@+id/etStock"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:ems="10"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Stock"
+            android:inputType="number"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorLink="#2E0909" />
+
+        <EditText
+            android:id="@+id/etPrecioCosto"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Costo"
+            android:inputType="numberDecimal"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorLink="#2E0909" />
+
+        <EditText
+            android:id="@+id/etPrecioVenta"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:fontFamily="@font/aladin"
+            android:hint="Ingrese Venta"
+            android:inputType="numberDecimal"
+            android:textColor="#2E0909"
+            android:textColorHighlight="#2E0909"
+            android:textColorLink="#2E0909" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAlmacenar"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra_bold_italic"
+                android:text="Guardar"
+                android:textSize="18sp"
+                app:icon="@android:drawable/ic_menu_save" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEliminarProducto"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra_bold_italic"
+                android:text="Eliminar"
+                android:textSize="18sp"
+                app:icon="@android:drawable/ic_menu_delete" />
+
+            <Button
+                android:id="@+id/btnConsultarProducto"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra_bold_italic"
+                android:text="Consultar"
+                android:textSize="18sp"
+                app:icon="@android:drawable/ic_menu_search" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="167dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:text="Regresar"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/etPrecioVenta" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="168dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
